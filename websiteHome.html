@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Indie Flower Font -->
+  <link href='https://fonts.googleapis.com/css?family=Indie Flower' rel='stylesheet'>
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+
+    h1 {
+      font-size: 40px;
+      padding: 10px;
+      color: black;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      transition: .5s ease;
+      backface-visibility: hidden;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: .5s ease;
+      background-color: rgb(255, 255, 255, 0.8);
+    }
+
+    .card:hover .overlay {
+      opacity: 1;
+    }
+
+    .navbar-brand {
+      font-size: 100px;
+    }
+
+    .nav-item {
+      font-size: 30px;
+    }
+
+    @media (min-width: 0px) {
+      .card-columns {
+        column-count: 1;
+      }
+    }
+
+    @media (min-width: 800px) {
+      .card-columns {
+        column-count: 2;
+      }
+    }
+
+    @media (min-width: 1300px) {
+      .card-columns {
+        column-count: 3;
+      }
+    }
+
+  </style>
+
+
+</head>
+
+<body>
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-xl sticky-top align-items-end navbar-light bg-white">
+      <a class="navbar-brand mt-n4 mb-n1">Dogs</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="websiteHome.html">Home</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="aboutCommonDogBreeds.html">Common Dog Breeds</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="dogFood.html">Best Dog Food</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="featureDog.html">Feature Dog</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <ul class="nav bg-white fixed-bottom justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link fa fa-instagram mx-3 text-secondary" href="https://www.instagram.com/weratedogs/" target="_blank"></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link fa fa-facebook-official mx-3 text-secondary" href="https://www.facebook.com/DogsTrust/?rf=110588832302997" target="_blank"></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link fa fa-twitter-square mx-3 text-secondary" href="https://twitter.com/dog_rates" target="_blank"></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link fa fa-pinterest-square mx-3 text-secondary" href="https://www.pinterest.com/dogtime/_created/" target="_blank"></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link fa fa-send mx-3 text-secondary" href="mailto:sydney.bold.23@bishops.com"></a>
+      </li>
+    </ul>
+
+    <div class="card-columns">
+      <div class="card">
+        <img class="card-img d-inline-block" src="images/affenpinscher.jpg" alt="affenpinscher">
+        <div class="overlay">
+          <a href="#"><h1>Affenpinscher</h1></a>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img d-inline-block" src="images/afghan-hound.jpg" alt="afghan-hound">
+        <div class="overlay">
+          <a href="#"><h1>Afghan Hound</h1></a>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img d-inline-block" src="images/airedale-terrier.jpg" alt="airedale-terrier">
+        <div class="overlay">
+          <a href="#"><h1>Airedale Terrier</h1></a>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img d-inline-block" src="images/akita.jpg" alt="akita">
+        <div class="overlay">
+          <a href="#"><h1>Akita</h1></a>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img d-inline-block" src="images/alaskan-malamute.jpg" alt="alaskan-malamute">
+        <div class="overlay">
+          <a href="#"><h1>Alaskan Malamute</h1></a>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img d-inline-block" src="images/american-eskimo.jpg" alt="american-eskimo">
+        <div class="overlay">
+          <a href="#"><h1>American Eskimo</h1></a>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img d-inline-block" src="images/american-foxhound.png" alt="american-foxhound">
+        <div class="overlay">
+          <a href="#"><h1>American Foxhound</h1></a>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img d-inline-block" src="images/american-staffordshire-terrier.jpg" alt="american-staffordshire-terrier">
+        <div class="overlay">
+          <a href="#"><h1>American Staffordshire Terrier</h1></a>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img d-inline-block" src="images/american-water-spaniel.jpg" alt="american-water-spaniel">
+        <div class="overlay">
+          <a href="#"><h1>American Water Spaniel</h1></a>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img d-inline-block" src="images/anatolian-shepherd-dog.jpg" alt="anatolian-shepherd-dog">
+        <div class="overlay">
+          <a href="#"><h1>Anatolian Shepherd Dog</h1></a>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img d-inline-block" src="images/australian-cattle-dog.jpg" alt="australian-cattle-dog">
+        <div class="overlay">
+          <a href="#"><h1>Australian Cattle Dog</h1></a>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img d-inline-block" src="images/australian-shepherd-dog.jpg" alt="australian-shepherd-dog">
+        <div class="overlay">
+          <a href="#"><h1>Australian Shepherd Dog</h1></a>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img d-inline-block" src="images/australian-terrier.jpg" alt="australian-terrier">
+        <div class="overlay">
+          <a href="#"><h1>Australian Terrier</h1></a>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img d-inline-block" src="images/basenji.jpg" alt="basenji">
+        <div class="overlay">
+          <a href="#"><h1>Basenji</h1></a>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img d-inline-block" src="images/basset-hound.jpg" alt="basset-hound">
+        <div class="overlay">
+          <a href="#"><h1>Basset Hound</h1></a>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img d-inline-block" src="images/beagle.png" alt="beagle">
+        <div class="overlay">
+          <a href="#"><h1>Beagle</h1></a>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img d-inline-block" src="images/bearded-collie.jpg" alt="bearded-collie">
+        <div class="overlay">
+          <a href="#"><h1>Bearded Collie</h1></a>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img d-inline-block" src="images/beauceron.jpg" alt="beauceron">
+        <div class="overlay">
+          <a href="#"><h1>Beauceron</h1></a>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img d-inline-block" src="images/bedlington-terrier.jpg" alt="bedlington-terrier">
+        <div class="overlay">
+          <a href="#"><h1>Bedlington Terrier</h1></a>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img d-inline-block" src="images/belgian-malinois.jpg" alt="belgian-malinois">
+        <div class="overlay">
+          <a href="#"><h1>Belgian Malinois</h1></a>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img d-inline-block" src="images/belgian-sheepdog.jpg" alt="belgian-sheepdog">
+        <div class="overlay">
+          <a href="#"><h1>Belgian Sheepdog</h1></a>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img d-inline-block" src="images/belgian-tervuren.jpg" alt="belgian-tervuren">
+        <div class="overlay">
+          <a href="#"><h1>Belgian Tervuren</h1></a>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img d-inline-block" src="images/bernese-mountain-dog.jpg" alt="bernese-mountain-dog">
+        <div class="overlay">
+          <a href="#"><h1>Bernese Mountain Dog</h1></a>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img d-inline-block" src="images/bichon-frise.jpg" alt="bichon-frise">
+        <div class="overlay">
+          <a href="#"><h1>Bichon Frise</h1></a>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img d-inline-block" src="images/black-and-tan-coonhound.jpg" alt="black-and-tan-coonhound">
+        <div class="overlay">
+          <a href="#"><h1>Black And Tan Coonhound</h1></a>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img d-inline-block" src="images/black-russian-terrier.jpg" alt="black-russian-terrier">
+        <div class="overlay">
+          <a href="#"><h1>Black Russian Terrier</h1></a>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img d-inline-block" src="images/bloodhound.jpg" alt="bloodhound">
+        <div class="overlay">
+          <a href="#"><h1>Bloodhound</h1></a>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img d-inline-block" src="images/border-collie.jpg" alt="border-collie">
+        <div class="overlay">
+          <a href="#"><h1>Border Collie</h1></a>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img d-inline-block" src="images/border-terrier.jpg" alt="border-terrier">
+        <div class="overlay">
+          <a href="#"><h1>Border Terrier</h1></a>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img d-inline-block" src="images/borzoi.jpg" alt="borzoi">
+        <div class="overlay">
+          <a href="#"><h1>Borzoi</h1></a>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img d-inline-block" src="images/boston-terrier.jpg" alt="boston-terrier">
+        <div class="overlay">
+          <a href="#"><h1>Boston Terrier</h1></a>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img d-inline-block" src="images/bouvier-des-flandres.jpg" alt="bouvier-des-flandres">
+        <div class="overlay">
+          <a href="#"><h1>Bouvier des Flandres</h1></a>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img d-inline-block" src="images/boxer.jpg" alt="boxer">
+        <div class="overlay">
+          <a href="#"><h1>Boxer</h1></a>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img d-inline-block" src="images/briard.jpg" alt="briard">
+        <div class="overlay">
+          <a href="#"><h1>Briard</h1></a>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img d-inline-block" src="images/brittany.jpg" alt="brittany">
+        <div class="overlay">
+          <a href="#"><h1>Brittany</h1></a>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img d-inline-block" src="images/brussels-griffon.jpg" alt="brussels-griffon">
+        <div class="overlay">
+          <a href="#"><h1>Brussels Griffon</h1></a>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img d-inline-block" src="images/bull-terrier.jpg" alt="bull-terrier">
+        <div class="overlay">
+          <a href="#"><h1>Bull Terrier</h1></a>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img d-inline-block" src="images/bulldog.jpg" alt="bulldog">
+        <div class="overlay">
+          <a href="#"><h1>Bulldog</h1></a>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img d-inline-block" src="images/bullmastiff.jpg" alt="bullmastiff">
+        <div class="overlay">
+          <a href="#"><h1>Bullmastiff</h1></a>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img d-inline-block" src="images/cairn-terrier.jpg" alt="cairn-terrier">
+        <div class="overlay">
+          <a href="#"><h1>Cairn Terrier</h1></a>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img d-inline-block" src="images/canaan-dog.jpg" alt="canaan-dog">
+        <div class="overlay">
+          <a href="#"><h1>Canaan Dog</h1></a>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img d-inline-block" src="images/cardigan-welsh-corgi.jpg" alt="cardigan-welsh-corgi">
+        <div class="overlay">
+          <a href="#"><h1>Cardigan Welsh Corgi</h1></a>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img d-inline-block" src="images/cavalier-king-charles-spaniel.jpg" alt="cavalier-king-charles-spaniel">
+        <div class="overlay">
+          <a href="#"><h1>Cavalier King Charles Spaniel</h1></a>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img d-inline-block" src="images/chesapeake-bay-retriever.jpg" alt="chesapeake-bay-retriever">
+        <div class="overlay">
+          <a href="#"><h1>Chesapeake Bay Retriever</h1></a>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img d-inline-block" src="images/chihuahua.jpg" alt="chihuahua">
+        <div class="overlay">
+          <a href="#"><h1>Chihuahua</h1></a>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img d-inline-block" src="images/chow-chow.jpg" alt="chow-chow">
+        <div class="overlay">
+          <a href="#"><h1>Chow Chow</h1></a>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img d-inline-block" src="images/clumber-spaniel.jpg" alt="clumber-spaniel">
+        <div class="overlay">
+          <a href="#"><h1>Clumber Spaniel</h1></a>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img d-inline-block" src="images/cocker-spaniel.jpg" alt="cocker-spaniel">
+        <div class="overlay">
+          <a href="#"><h1>Cocker Spaniel</h1></a>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img d-inline-block" src="images/collie.jpg" alt="collie">
+        <div class="overlay">
+          <a href="#"><h1>Collie</h1></a>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img d-inline-block" src="images/curly-coated-retriever.jpg" alt="curly-coated-retriever">
+        <div class="overlay">
+          <a href="#"><h1>Curly Coated Retriever</h1></a>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</body>
+</html>
