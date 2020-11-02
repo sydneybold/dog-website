@@ -14,81 +14,70 @@
   <!-- Latest compiled JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-  <!-- Indie Flower Font -->
-  <link href='https://fonts.googleapis.com/css?family=Indie Flower' rel='stylesheet'>
-
   <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-
-  <style>
-    .navbar-brand {
-      font-size: 100px;
-    }
-
-    .nav-item {
-      font-size: 30px;
-    }
-  </style>
+  <!-- Style Sheet -->
+  <link rel="stylesheet" href="style.css">
 
 </head>
 
-<body>
+<body class="mb-5">
 
   <div class="container-fluid">
-
+    <!-- top navbar to help navigate website-->
     <nav class="navbar navbar-expand-xl sticky-top align-items-end navbar-light bg-white">
-      <a class="navbar-brand mt-n4 mb-n1">Dogs</a>
+      <a class="navbar-brand mt-n5 mb-n4" href="websiteHome.html">Dogs</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item mx-3">
-            <a class="nav-link" href="websitehome.html">Home</a>
-          </li>
-          <li class="nav-item mx-3">
+          <li class="nav-item mx-4">
             <a class="nav-link" href="aboutCommonDogBreeds.html">Common Dog Breeds</a>
           </li>
-          <li class="nav-item mx-3">
-            <a class="nav-link" href="dogfood.html">Best Dog Food</a>
+          <li class="nav-item mx-4">
+            <a class="nav-link" href="dogFood.html">Best Dog Food</a>
           </li>
-          <li class="nav-item mx-3">
-            <a class="nav-link" href="#">Hello</a>
+          <li class="nav-item mx-4">
+            <a class="nav-link" href="featureDog.html">Feature Dog</a>
           </li>
         </ul>
       </div>
     </nav>
 
+    <!-- bottom nav with contact info -->
     <ul class="nav bg-white fixed-bottom justify-content-center">
       <li class="nav-item">
-        <a class="nav-link fa fa-instagram mx-3 text-secondary" href="https://www.instagram.com/weratedogs/" target="_blank"></a>
+        <a class="nav-link fa fa-instagram mx-3 text-secondary text-decoration-none" href="https://www.instagram.com/weratedogs/" target="_blank"></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link fa fa-facebook-official mx-3 text-secondary" href="https://www.facebook.com/DogsTrust/?rf=110588832302997" target="_blank"></a>
+        <a class="nav-link fa fa-facebook-official mx-3 text-secondary text-decoration-none" href="https://www.facebook.com/DogsTrust/?rf=110588832302997" target="_blank"></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link fa fa-twitter-square mx-3 text-secondary" href="https://twitter.com/dog_rates" target="_blank"></a>
+        <a class="nav-link fa fa-twitter-square mx-3 text-secondary text-decoration-none" href="https://twitter.com/dog_rates" target="_blank"></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link fa fa-pinterest-square mx-3 text-secondary" href="https://www.pinterest.com/dogtime/_created/" target="_blank"></a>
+        <a class="nav-link fa fa-pinterest-square mx-3 text-secondary text-decoration-none" href="https://www.pinterest.com/dogtime/_created/" target="_blank"></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link fa fa-send mx-3 text-secondary" href="mailto:sydney.bold.23@bishops.com"></a>
+        <a class="nav-link fa fa-send mx-3 text-secondary text-decoration-none" href="mailto:sydney.bold.23@bishops.com"></a>
       </li>
     </ul>
 
+    <!-- header of the page -->
     <h1 class="display-1">Dog Breeds</h1>
 
     <br />
 
+    <!-- section about golden retrievers -->
     <h1>Golden Retriever</h1>
     <div class="row">
       <div class="col-sm-12 col-lg-5">
         <img src="images/golden-retriever.jpg" class="img-fluid w-100" alt="golden-retriever" />
       </div>
       <div class="col-sm-12 col-lg-7">
-        <p>
+        <p class="dogtext">
           The Golden Retriever is a sturdy, muscular dog of medium size, famous for
           the dense, lustrous coat of gold that gives the breed its name. The broad head,
           with its friendly and intelligent eyes, short ears, and straight muzzle, is
@@ -114,13 +103,14 @@
     <br />
     <br />
 
+    <!-- section about beagles -->
     <h1>Beagle</h1>
     <div class="row">
       <div class="col-sm-12 col-lg-5">
         <img src="images/beagle.png" class= "img-fluid w-100" alt="beagle" />
       </div>
       <div class="col-sm-12 col-lg-7">
-        <p>
+        <p class="dogtext">
           There are two Beagle varieties: those standing under 13 inches at the shoulder,
           and those between 13 and 15 inches. Both varieties are sturdy, solid, and
           “big for their inches,” as dog folks say. They come in such pleasing colors
@@ -146,13 +136,14 @@
     <br />
     <br />
 
+    <!-- section about pugs -->
     <h1>Pug</h1>
     <div class="row">
       <div class="col-sm-12 col-lg-5">
         <img src="images/pug.jpg" class= "img-fluid w-100" alt="pug" />
       </div>
       <div class="col-sm-12 col-lg-7">
-        <p>
+        <p class="dogtext">
           The Pug’s motto is the Latin phrase “multum in parvo” (a lot in a little)—an
           apt description of this small but muscular breed. They come in three colors:
           silver or apricot-fawn with a black face mask, or all black. The large round
@@ -178,13 +169,14 @@
     <br />
     <br />
 
+    <!-- section about yorkshire terriers -->
     <h1>Yorkshire Terrier</h1>
     <div class="row">
       <div class="col-sm-12 col-lg-5">
         <img src="images/yorkshire-terrier.png" class= "img-fluid w-100" alt="yorkshire-terrier" />
       </div>
       <div class="col-sm-12 col-lg-7">
-        <p>
+        <p class="dogtext">
           The Yorkshire Terrier is a compact, toy-size terrier of no more than seven
           pounds whose crowning glory is a floor-length, silky coat of steel blue and a
           rich golden tan. Don’t let the Yorkie’s daintiness fool you. Tenacious, feisty,
@@ -210,13 +202,14 @@
     <br />
     <br />
 
+    <!-- section about lhasa apsos -->
     <h1>Lhasa Apso</h1>
     <div class="row">
       <div class="col-sm-12 col-lg-5">
         <img src="images/lhasa-apso.jpg" class= "img-fluid w-100" alt="lhasa-apso" />
       </div>
       <div class="col-sm-12 col-lg-7">
-        <p>
+        <p class="dogtext">
           Standing less than a foot high at the shoulder, Lhasas are small but hardy dogs
           of aristocratic bearing. They’re famous for a floor-length, flat-hanging coat,
           parted in the middle and draping each side of the body. A feathery tail curls
@@ -238,13 +231,14 @@
     <br />
     <br />
 
+    <!-- section about bernese mountain dogs -->
     <h1>Bernese Mountain Dog</h1>
     <div class="row">
       <div class="col-sm-12 col-lg-5">
         <img src="images/bernese-mountain-dog.jpg" class= "img-fluid w-100" alt="bernese-mountain-dog" />
       </div>
       <div class="col-sm-12 col-lg-7">
-        <p>
+        <p class="dogtext">
           The Bernese Mountain Dog is a large, sturdy worker who can stand over 27 inches
           at the shoulder. The thick, silky, and moderately long coat is tricolored: jet
           black, clear white, and rust. The distinctive markings on the coat and face are
@@ -270,13 +264,14 @@
     <br />
     <br />
 
+    <!-- section about maltes -->
     <h1>Maltese</h1>
     <div class="row">
       <div class="col-sm-12 col-lg-5">
         <img src="images/maltese.jpg" class= "img-fluid w-100" alt="maltese" />
       </div>
       <div class="col-sm-12 col-lg-7">
-        <p>
+        <p class="dogtext">
           Maltese are affectionate toy dogs weighing less than seven pounds, covered
           by a long, straight, silky coat. Beneath the all-white mantle is a compact body
           moving with a smooth and effortless gait. The overall picture depicts free-flowing
@@ -302,13 +297,14 @@
     <br />
     <br />
 
+    <!-- section about huskies -->
     <h1>Husky</h1>
     <div class="row">
       <div class="col-sm-12 col-lg-5">
         <img src="images/siberian-husky.png" class= "img-fluid w-100" alt="siberian-husky" />
       </div>
       <div class="col-sm-12 col-lg-7">
-        <p>
+        <p class="dogtext">
           The graceful, medium-sized Siberian Husky’s almond-shaped eyes can be either
           brown or blue—and sometimes one of each—and convey a keen but amiable and even
           mischievous expression. Quick and nimble-footed, Siberians are known for their
@@ -336,13 +332,14 @@
     <br />
     <br />
 
+    <!-- section about toy poodles -->
     <h1>Toy Poodle</h1>
     <div class="row">
       <div class="col-sm-12 col-lg-5">
         <img src="images/toy-poodle.jpg" class= "img-fluid w-100" alt="toy-poodle" />
       </div>
       <div class="col-sm-12 col-lg-7">
-        <p>
+        <p class="dogtext">
           Poodles come in three size varieties: Standards should be more than 15
           inches tall at the shoulder; Miniatures are 15 inches or under; Toys stand no
           more than 10 inches. All three varieties have the same build and proportions.

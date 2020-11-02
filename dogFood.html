@@ -14,93 +14,79 @@
   <!-- Latest compiled JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-  <!-- Indie Flower Font -->
-  <link href='https://fonts.googleapis.com/css?family=Indie Flower' rel='stylesheet'>
-
   <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <style>
-
-    .navbar-brand {
-      font-size: 100px;
-    }
-
-    .nav-item {
-      font-size: 30px;
-    }
-
-    a {
-      font-size: 30px;
-    }
-
-  </style>
-
+  <!-- Style Sheet -->
+  <link rel="stylesheet" href="style.css">
 
 </head>
 
-<body>
+<body class="mb-5">
   <div class="container-fluid">
+    <!-- top navbar to help navigate website-->
     <nav class="navbar navbar-expand-xl sticky-top align-items-end navbar-light bg-white">
-      <a class="navbar-brand mt-n4 mb-n1">Dogs</a>
+      <a class="navbar-brand mt-n5 mb-n4" href="websiteHome.html">Dogs</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item mx-3">
-            <a class="nav-link" href="websiteHome.html">Home</a>
-          </li>
-          <li class="nav-item mx-3">
+          <li class="nav-item mx-4">
             <a class="nav-link" href="aboutCommonDogBreeds.html">Common Dog Breeds</a>
           </li>
-          <li class="nav-item mx-3">
+          <li class="nav-item mx-4">
             <a class="nav-link" href="dogFood.html">Best Dog Food</a>
           </li>
-          <li class="nav-item mx-3">
+          <li class="nav-item mx-4">
             <a class="nav-link" href="featureDog.html">Feature Dog</a>
           </li>
         </ul>
       </div>
     </nav>
 
+    <!-- bottom nav with contact info -->
     <ul class="nav bg-white fixed-bottom justify-content-center">
       <li class="nav-item">
-        <a class="nav-link fa fa-instagram mx-3 text-secondary" href="https://www.instagram.com/weratedogs/" target="_blank"></a>
+        <a class="nav-link fa fa-instagram mx-3 text-secondary text-decoration-none" href="https://www.instagram.com/weratedogs/" target="_blank"></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link fa fa-facebook-official mx-3 text-secondary" href="https://www.facebook.com/DogsTrust/?rf=110588832302997" target="_blank"></a>
+        <a class="nav-link fa fa-facebook-official mx-3 text-secondary text-decoration-none" href="https://www.facebook.com/DogsTrust/?rf=110588832302997" target="_blank"></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link fa fa-twitter-square mx-3 text-secondary" href="https://twitter.com/dog_rates" target="_blank"></a>
+        <a class="nav-link fa fa-twitter-square mx-3 text-secondary text-decoration-none" href="https://twitter.com/dog_rates" target="_blank"></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link fa fa-pinterest-square mx-3 text-secondary" href="https://www.pinterest.com/dogtime/_created/" target="_blank"></a>
+        <a class="nav-link fa fa-pinterest-square mx-3 text-secondary text-decoration-none" href="https://www.pinterest.com/dogtime/_created/" target="_blank"></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link fa fa-send mx-3 text-secondary" href="mailto:sydney.bold.23@bishops.com"></a>
+        <a class="nav-link fa fa-send mx-3 text-secondary text-decoration-none" href="mailto:sydney.bold.23@bishops.com"></a>
       </li>
     </ul>
 
-
-    <div class="card w-100 mb-5">
-      <img class="card-img img-fluid" src="images/dog-eating-food.jpg" alt="dog-eating-food" />
-      <div class="card-img-overlay d-flex flex-column">
-        <h1 class="display-1 card-title text-center">Best Dog Food Brands</h1>
-        <a href="#DF" class="btn btn-light mt-auto" role="button" aria-pressed="true">Best Dry Dog Food Brands</a>
-        <a href="#WF" class="btn btn-light mt-2" role="button" aria-pressed="true">Best Wet Dog Food Brands</a>
+    <!-- jumbotron with photo of dog eating food and title with buttons for wet and dry dog foods-->
+    <div class="jumbotron jumbotron-fluid">
+      <h1 class="display-1 text-center">Best Dog Food Brands</h1>
+      <div class="d-flex flex-row align-items-end justify-content-center" style="height: 600px;">
+        <p class="lead">
+          <a class="btn btn-light btn-lg mr-4" href="#DF" role="button">Best Dry Dog Food Brands</a>
+        </p>
+        <p class="lead">
+          <a class="btn btn-light btn-lg ml-4" href="#WF" role="button">Best Wet Dog Food Brands</a>
+        </p>
       </div>
     </div>
 
-    <h1 class="mb-5" id="DF">Best Dry Dog Food Brands</h1>
+    <!-- section title for the dry dog foods and bookmark -->
+    <h1 class="my-5 anchor" id="DF">Best Dry Dog Food Brands</h1>
 
-
+    <!-- section about instinct dog food -->
     <div class="row mb-5">
       <div class="col-5 col-sm-5 col-md-4 col-lg-3">
         <img class="img-fluid" src="images/instinct-dog-food.jpg" alt="instinct-dog-food" />
       </div>
       <div class="col-sm-7 col-md-8 col-lg-8">
-        <a class="text-reset" href="https://www.amazon.com/Instinct-Original-Chicken-Natural-NatureS/dp/B06XD9KBTT/ref=sr_1_1_sspa?dchild=1&keywords=instinct+original+dry+dog+food&qid=1603227797&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFVSU9XWjhXN05HRTYmZW5jcnlwdGVkSWQ9QTA4MTE2MDcxM0FJNThYQlRLUDAwJmVuY3J5cHRlZEFkSWQ9QTAzOTIwMTgxNjdaTjAwUVozNE9JJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==" target="_blank">Instinct Original Grain-Free</a>
+        <a class="text-reset foodname" href="https://www.amazon.com/Instinct-Original-Chicken-Natural-NatureS/dp/B06XD9KBTT/ref=sr_1_1_sspa?dchild=1&keywords=instinct+original+dry+dog+food&qid=1603227797&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFVSU9XWjhXN05HRTYmZW5jcnlwdGVkSWQ9QTA4MTE2MDcxM0FJNThYQlRLUDAwJmVuY3J5cHRlZEFkSWQ9QTAzOTIwMTgxNjdaTjAwUVozNE9JJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==" target="_blank">Instinct Original Grain-Free</a>
 
         <p>
           <span class="font-weight-bold">Rating:</span>
@@ -142,13 +128,13 @@
     </div>
 
 
-
+    <!-- section about nature's logic dog food -->
     <div class="row mb-5">
       <div class="col-5 col-sm-5 col-md-4 col-lg-3">
         <img class="img-fluid" src="images/nature's-logic-dog-food.png" alt="nature's-logic-dog-food" />
       </div>
       <div class="col-sm-7 col-md-8 col-lg-8">
-        <a class="text-reset pb-5" href="https://www.amazon.com/s?k=Nature%27s+Logic+Dry+Dog+Food&rh=n%3A2619533011%2Cp_89%3APurina+ONE&dc&qid=1603256320&rnid=2528832011&ref=sr_nr_p_89_4" target="_blank">Nature's Logic Dry Dog Food</a>
+        <a class="text-reset pb-5 foodname" href="https://www.amazon.com/s?k=Nature%27s+Logic+Dry+Dog+Food&rh=n%3A2619533011%2Cp_89%3APurina+ONE&dc&qid=1603256320&rnid=2528832011&ref=sr_nr_p_89_4" target="_blank">Nature's Logic Dry Dog Food</a>
 
         <p>
           <span class="font-weight-bold">Rating:</span>
@@ -189,13 +175,13 @@
       </div>
     </div>
 
-
+    <!-- section about wellness complete dog food -->
     <div class="row mb-5">
       <div class="col-5 col-sm-5 col-md-4 col-lg-3">
         <img class="img-fluid" src="images/wellness-complete-dog-food.jpg" alt="wellness-complete-dog-food" />
       </div>
       <div class="col-sm-7 col-md-8 col-lg-8">
-        <a class="text-reset pb-5" href="https://www.amazon.com/s?k=Wellness+Complete+Health+Dry+Dog+Food&ref=nb_sb_noss" target="_blank">Wellness Complete Health Dry Dog Food</a>
+        <a class="text-reset pb-5 foodname" href="https://www.amazon.com/s?k=Wellness+Complete+Health+Dry+Dog+Food&ref=nb_sb_noss" target="_blank">Wellness Complete Health Dry Dog Food</a>
 
         <p>
           <span class="font-weight-bold">Rating:</span>
@@ -235,14 +221,15 @@
       </div>
     </div>
 
-    <h1 class="py-5" id="WF">Best Wet Dog Food Brands</h1>
+    <!-- section title for the wet dog foods and bookmark -->
+    <h1 class="my-5 anchor" id="WF">Best Wet Dog Food Brands</h1>
 
     <div class="row mb-5">
       <div class="col-5 col-sm-5 col-md-4 col-lg-3">
         <img class="img-fluid" src="images/taste-of-the-wild-dog-food.jpg" alt="taste-of-the-wild-dog-food" />
       </div>
       <div class="col-sm-7 col-md-8 col-lg-8">
-        <a class="text-reset" href="https://www.chewy.com/s?query=taste%20of%20the%20wild%20wet%20dog%20food&nav-submit-button=&utm_source=partnerize&utm_medium=affiliates&utm_campaign=1100l35838&utm_content=0&clickref=1101lbPv7NL2&utm_term=1101lbPv7NL2" target="_blank">Taste of the Wild Wet Dog Food</a>
+        <a class="text-reset foodname" href="https://www.chewy.com/s?query=taste%20of%20the%20wild%20wet%20dog%20food&nav-submit-button=&utm_source=partnerize&utm_medium=affiliates&utm_campaign=1100l35838&utm_content=0&clickref=1101lbPv7NL2&utm_term=1101lbPv7NL2" target="_blank">Taste of the Wild Wet Dog Food</a>
 
         <p>
           <span class="font-weight-bold">Rating:</span>
@@ -282,12 +269,13 @@
       </div>
     </div>
 
+    <!-- section about merrick dog food -->
     <div class="row mb-5">
       <div class="col-5 col-sm-5 col-md-4 col-lg-3">
         <img class="img-fluid" src="images/merrick-dog-food.jpg" alt="merrick-dog-food" />
       </div>
       <div class="col-sm-7 col-md-8 col-lg-8">
-        <a class="text-reset" href="https://www.chewy.com/brands/shop-by-dog-10601?rh=c%3A3312%2Cc%3A7048%2Cc%3A10601%2CFoodForm%3AWet+Food&query=&utm_term=1101lbPv8NNM&utm_campaign=1100l35838&utm_medium=affiliates&nav-submit-button=&clickref=1101lbPv8NNM&utm_source=partnerize&utm_content=0&ref=searchRedirect&ref-query=merrick%20wet%20dog%20food" target="_blank">Merrick Classic Canned Dog Food</a>
+        <a class="text-reset foodname" href="https://www.chewy.com/brands/shop-by-dog-10601?rh=c%3A3312%2Cc%3A7048%2Cc%3A10601%2CFoodForm%3AWet+Food&query=&utm_term=1101lbPv8NNM&utm_campaign=1100l35838&utm_medium=affiliates&nav-submit-button=&clickref=1101lbPv8NNM&utm_source=partnerize&utm_content=0&ref=searchRedirect&ref-query=merrick%20wet%20dog%20food" target="_blank">Merrick Classic Canned Dog Food</a>
 
         <p>
           <span class="font-weight-bold">Rating:</span>
@@ -326,13 +314,13 @@
       </div>
     </div>
 
-
+    <!-- section about ollie's dog food -->
     <div class="row mb-5">
       <div class="col-5 col-sm-5 col-md-4 col-lg-3">
         <img class="img-fluid" src="images/ollie-dog-food.jpg" alt="ollie-dog-food" />
       </div>
       <div class="col-sm-7 col-md-8 col-lg-8">
-        <a class="text-reset" href="https://www.myollie.com/" target="_blank">Ollie Fresh Dog Food</a>
+        <a class="text-reset foodname" href="https://www.myollie.com/" target="_blank">Ollie Fresh Dog Food</a>
 
         <p>
           <span class="font-weight-bold">Rating:</span>

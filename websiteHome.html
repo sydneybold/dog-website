@@ -14,425 +14,356 @@
   <!-- Latest compiled JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-  <!-- Indie Flower Font -->
-  <link href='https://fonts.googleapis.com/css?family=Indie Flower' rel='stylesheet'>
-
   <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <style>
-
-    h1 {
-      font-size: 40px;
-      padding: 10px;
-      color: black;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-      text-align: center;
-    }
-
-    img {
-      display: block;
-      width: 100%;
-      height: auto;
-      transition: .5s ease;
-      backface-visibility: hidden;
-    }
-
-    .overlay {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      height: 100%;
-      width: 100%;
-      opacity: 0;
-      transition: .5s ease;
-      background-color: rgb(255, 255, 255, 0.8);
-    }
-
-    .card:hover .overlay {
-      opacity: 1;
-    }
-
-    .navbar-brand {
-      font-size: 100px;
-    }
-
-    .nav-item {
-      font-size: 30px;
-    }
-
-    @media (min-width: 0px) {
-      .card-columns {
-        column-count: 1;
-      }
-    }
-
-    @media (min-width: 800px) {
-      .card-columns {
-        column-count: 2;
-      }
-    }
-
-    @media (min-width: 1300px) {
-      .card-columns {
-        column-count: 3;
-      }
-    }
-
-  </style>
-
+  <!-- Style Sheet -->
+  <link rel="stylesheet" href="style.css">
 
 </head>
 
-<body>
+<body class="mb-5">
   <div class="container-fluid">
+    <!-- top navbar to help navigate website-->
     <nav class="navbar navbar-expand-xl sticky-top align-items-end navbar-light bg-white">
-      <a class="navbar-brand mt-n4 mb-n1">Dogs</a>
+      <a class="navbar-brand mt-n5 mb-n4" href="websiteHome.html">Dogs</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item mx-3">
-            <a class="nav-link" href="websiteHome.html">Home</a>
-          </li>
-          <li class="nav-item mx-3">
+          <li class="nav-item mx-4">
             <a class="nav-link" href="aboutCommonDogBreeds.html">Common Dog Breeds</a>
           </li>
-          <li class="nav-item mx-3">
+          <li class="nav-item mx-4">
             <a class="nav-link" href="dogFood.html">Best Dog Food</a>
           </li>
-          <li class="nav-item mx-3">
+          <li class="nav-item mx-4">
             <a class="nav-link" href="featureDog.html">Feature Dog</a>
           </li>
         </ul>
       </div>
     </nav>
 
+    <!-- bottom nav with contact info -->
     <ul class="nav bg-white fixed-bottom justify-content-center">
       <li class="nav-item">
-        <a class="nav-link fa fa-instagram mx-3 text-secondary" href="https://www.instagram.com/weratedogs/" target="_blank"></a>
+        <a class="nav-link fa fa-instagram mx-3 text-secondary text-decoration-none" href="https://www.instagram.com/weratedogs/" target="_blank"></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link fa fa-facebook-official mx-3 text-secondary" href="https://www.facebook.com/DogsTrust/?rf=110588832302997" target="_blank"></a>
+        <a class="nav-link fa fa-facebook-official mx-3 text-secondary text-decoration-none" href="https://www.facebook.com/DogsTrust/?rf=110588832302997" target="_blank"></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link fa fa-twitter-square mx-3 text-secondary" href="https://twitter.com/dog_rates" target="_blank"></a>
+        <a class="nav-link fa fa-twitter-square mx-3 text-secondary text-decoration-none" href="https://twitter.com/dog_rates" target="_blank"></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link fa fa-pinterest-square mx-3 text-secondary" href="https://www.pinterest.com/dogtime/_created/" target="_blank"></a>
+        <a class="nav-link fa fa-pinterest-square mx-3 text-secondary text-decoration-none" href="https://www.pinterest.com/dogtime/_created/" target="_blank"></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link fa fa-send mx-3 text-secondary" href="mailto:sydney.bold.23@bishops.com"></a>
+        <a class="nav-link fa fa-send mx-3 text-secondary text-decoration-none" href="mailto:sydney.bold.23@bishops.com"></a>
       </li>
     </ul>
 
+    <!-- grid of dog images with names if hovered over -->
     <div class="card-columns">
       <div class="card">
-        <img class="card-img d-inline-block" src="images/affenpinscher.jpg" alt="affenpinscher">
+        <img class="card-img d-inline-block w-100 dogimg" src="images/affenpinscher.jpg" alt="affenpinscher" />
         <div class="overlay">
-          <a href="#"><h1>Affenpinscher</h1></a>
+          <a class="text-body breed" href="https://www.akc.org/dog-breeds/affenpinscher/" target="_blank">Affenpinscher</a>
         </div>
       </div>
       <div class="card">
-        <img class="card-img d-inline-block" src="images/afghan-hound.jpg" alt="afghan-hound">
+        <img class="card-img d-inline-block w-100 dogimg" src="images/afghan-hound.jpg" alt="afghan-hound" />
         <div class="overlay">
-          <a href="#"><h1>Afghan Hound</h1></a>
+          <a class="text-body breed" href="https://www.akc.org/dog-breeds/afghan-hound/" target="_blank">Afghan Hound</a>
         </div>
       </div>
       <div class="card">
-        <img class="card-img d-inline-block" src="images/airedale-terrier.jpg" alt="airedale-terrier">
+        <img class="card-img d-inline-block w-100 dogimg" src="images/airedale-terrier.jpg" alt="airedale-terrier" />
         <div class="overlay">
-          <a href="#"><h1>Airedale Terrier</h1></a>
+          <a class="text-body breed" href="https://www.akc.org/dog-breeds/airedale-terrier/" target="_blank">Airedale Terrier</a>
         </div>
       </div>
       <div class="card">
-        <img class="card-img d-inline-block" src="images/akita.jpg" alt="akita">
+        <img class="card-img d-inline-block w-100 dogimg" src="images/akita.jpg" alt="akita" />
         <div class="overlay">
-          <a href="#"><h1>Akita</h1></a>
+          <a class="text-body breed" href="https://www.akc.org/dog-breeds/akita/" target="_blank">Akita</a>
         </div>
       </div>
       <div class="card">
-        <img class="card-img d-inline-block" src="images/alaskan-malamute.jpg" alt="alaskan-malamute">
+        <img class="card-img d-inline-block w-100 dogimg" src="images/alaskan-malamute.jpg" alt="alaskan-malamute" />
         <div class="overlay">
-          <a href="#"><h1>Alaskan Malamute</h1></a>
+          <a class="text-body breed" href="https://www.akc.org/dog-breeds/alaskan-malamute/" target="_blank">Alaskan Malamute</a>
         </div>
       </div>
       <div class="card">
-        <img class="card-img d-inline-block" src="images/american-eskimo.jpg" alt="american-eskimo">
+        <img class="card-img d-inline-block w-100 dogimg" src="images/american-eskimo.jpg" alt="american-eskimo" />
         <div class="overlay">
-          <a href="#"><h1>American Eskimo</h1></a>
+          <a class="text-body breed" href="https://www.akc.org/dog-breeds/american-eskimo-dog/" target="_blank">American Eskimo</a>
         </div>
       </div>
       <div class="card">
-        <img class="card-img d-inline-block" src="images/american-foxhound.png" alt="american-foxhound">
+        <img class="card-img d-inline-block w-100 dogimg" src="images/american-foxhound.png" alt="american-foxhound" />
         <div class="overlay">
-          <a href="#"><h1>American Foxhound</h1></a>
+          <a class="text-body breed" href="https://www.akc.org/dog-breeds/american-foxhound/" target="_blank">American Foxhound</a>
         </div>
       </div>
       <div class="card">
-        <img class="card-img d-inline-block" src="images/american-staffordshire-terrier.jpg" alt="american-staffordshire-terrier">
+        <img class="card-img d-inline-block w-100 dogimg" src="images/american-staffordshire-terrier.jpg" alt="american-staffordshire-terrier" />
         <div class="overlay">
-          <a href="#"><h1>American Staffordshire Terrier</h1></a>
+          <a class="text-body breed" href="https://www.akc.org/dog-breeds/american-staffordshire-terrier/" target="_blank">American Staffordshire Terrier</a>
         </div>
       </div>
       <div class="card">
-        <img class="card-img d-inline-block" src="images/american-water-spaniel.jpg" alt="american-water-spaniel">
+        <img class="card-img d-inline-block w-100 dogimg" src="images/american-water-spaniel.jpg" alt="american-water-spaniel" />
         <div class="overlay">
-          <a href="#"><h1>American Water Spaniel</h1></a>
+          <a class="text-body breed" href="https://www.akc.org/dog-breeds/american-water-spaniel/" target="_blank">American Water Spaniel</a>
         </div>
       </div>
       <div class="card">
-        <img class="card-img d-inline-block" src="images/anatolian-shepherd-dog.jpg" alt="anatolian-shepherd-dog">
+        <img class="card-img d-inline-block w-100 dogimg" src="images/anatolian-shepherd-dog.jpg" alt="anatolian-shepherd-dog" />
         <div class="overlay">
-          <a href="#"><h1>Anatolian Shepherd Dog</h1></a>
+          <a class="text-body breed" href="https://www.akc.org/dog-breeds/anatolian-shepherd-dog/" target="_blank">Anatolian Shepherd Dog</a>
         </div>
       </div>
       <div class="card">
-        <img class="card-img d-inline-block" src="images/australian-cattle-dog.jpg" alt="australian-cattle-dog">
+        <img class="card-img d-inline-block w-100 dogimg" src="images/australian-cattle-dog.jpg" alt="australian-cattle-dog" />
         <div class="overlay">
-          <a href="#"><h1>Australian Cattle Dog</h1></a>
+          <a class="text-body breed" href="https://www.akc.org/dog-breeds/australian-cattle-dog/" target="_blank">Australian Cattle Dog</a>
         </div>
       </div>
       <div class="card">
-        <img class="card-img d-inline-block" src="images/australian-shepherd-dog.jpg" alt="australian-shepherd-dog">
+        <img class="card-img d-inline-block w-100 dogimg" src="images/australian-shepherd-dog.jpg" alt="australian-shepherd-dog" />
         <div class="overlay">
-          <a href="#"><h1>Australian Shepherd Dog</h1></a>
+          <a class="text-body breed" href="https://www.akc.org/dog-breeds/australian-shepherd/" target="_blank">Australian Shepherd Dog</a>
         </div>
       </div>
       <div class="card">
-        <img class="card-img d-inline-block" src="images/australian-terrier.jpg" alt="australian-terrier">
+        <img class="card-img d-inline-block w-100 dogimg" src="images/australian-terrier.jpg" alt="australian-terrier" />
         <div class="overlay">
-          <a href="#"><h1>Australian Terrier</h1></a>
+          <a class="text-body breed" href="https://www.akc.org/dog-breeds/australian-terrier/" target="_blank">Australian Terrier</a>
         </div>
       </div>
       <div class="card">
-        <img class="card-img d-inline-block" src="images/basenji.jpg" alt="basenji">
+        <img class="card-img d-inline-block w-100 dogimg" src="images/basenji.jpg" alt="basenji" />
         <div class="overlay">
-          <a href="#"><h1>Basenji</h1></a>
+          <a class="text-body breed" href="https://www.akc.org/dog-breeds/basenji/" target="_blank"><h1>Basenji</a>
         </div>
       </div>
       <div class="card">
-        <img class="card-img d-inline-block" src="images/basset-hound.jpg" alt="basset-hound">
+        <img class="card-img d-inline-block w-100 dogimg" src="images/basset-hound.jpg" alt="basset-hound" />
         <div class="overlay">
-          <a href="#"><h1>Basset Hound</h1></a>
+          <a class="text-body breed" href="https://www.akc.org/dog-breeds/basset-hound/" target="_blank">Basset Hound</a>
         </div>
       </div>
       <div class="card">
-        <img class="card-img d-inline-block" src="images/beagle.png" alt="beagle">
+        <img class="card-img d-inline-block w-100 dogimg" src="images/beagle.png" alt="beagle" />
         <div class="overlay">
-          <a href="#"><h1>Beagle</h1></a>
+          <a class="text-body breed" href="https://www.akc.org/dog-breeds/beagle/" target="_blank"><h1>Beagle</a>
         </div>
       </div>
       <div class="card">
-        <img class="card-img d-inline-block" src="images/bearded-collie.jpg" alt="bearded-collie">
+        <img class="card-img d-inline-block w-100 dogimg" src="images/bearded-collie.jpg" alt="bearded-collie" />
         <div class="overlay">
-          <a href="#"><h1>Bearded Collie</h1></a>
+          <a class="text-body breed" href="https://www.akc.org/dog-breeds/bearded-collie/" target="_blank"><h1>Bearded Collie</a>
         </div>
       </div>
       <div class="card">
-        <img class="card-img d-inline-block" src="images/beauceron.jpg" alt="beauceron">
+        <img class="card-img d-inline-block w-100 dogimg" src="images/beauceron.jpg" alt="beauceron" />
         <div class="overlay">
-          <a href="#"><h1>Beauceron</h1></a>
+          <a class="text-body breed" href="https://www.akc.org/dog-breeds/beauceron/" target="_blank">Beauceron</a>
         </div>
       </div>
       <div class="card">
-        <img class="card-img d-inline-block" src="images/bedlington-terrier.jpg" alt="bedlington-terrier">
+        <img class="card-img d-inline-block w-100 dogimg" src="images/bedlington-terrier.jpg" alt="bedlington-terrier" />
         <div class="overlay">
-          <a href="#"><h1>Bedlington Terrier</h1></a>
+          <a class="text-body breed" href="https://www.akc.org/dog-breeds/bedlington-terrier/" target="_blank">Bedlington Terrier</a>
         </div>
       </div>
       <div class="card">
-        <img class="card-img d-inline-block" src="images/belgian-malinois.jpg" alt="belgian-malinois">
+        <img class="card-img d-inline-block w-100 dogimg" src="images/belgian-malinois.jpg" alt="belgian-malinois" />
         <div class="overlay">
-          <a href="#"><h1>Belgian Malinois</h1></a>
+          <a class="text-body breed" href="https://www.akc.org/dog-breeds/belgian-malinois/" target="_blank">Belgian Malinois</a>
         </div>
       </div>
       <div class="card">
-        <img class="card-img d-inline-block" src="images/belgian-sheepdog.jpg" alt="belgian-sheepdog">
+        <img class="card-img d-inline-block w-100 dogimg" src="images/belgian-sheepdog.jpg" alt="belgian-sheepdog" />
         <div class="overlay">
-          <a href="#"><h1>Belgian Sheepdog</h1></a>
+          <a class="text-body breed" href="https://www.akc.org/dog-breeds/belgian-sheepdog/" target="_blank">Belgian Sheepdog</a>
         </div>
       </div>
       <div class="card">
-        <img class="card-img d-inline-block" src="images/belgian-tervuren.jpg" alt="belgian-tervuren">
+        <img class="card-img d-inline-block w-100 dogimg" src="images/belgian-tervuren.jpg" alt="belgian-tervuren" />
         <div class="overlay">
-          <a href="#"><h1>Belgian Tervuren</h1></a>
+          <a class="text-body breed" href="https://www.akc.org/dog-breeds/belgian-tervuren/" target="_blank">Belgian Tervuren</a>
         </div>
       </div>
       <div class="card">
-        <img class="card-img d-inline-block" src="images/bernese-mountain-dog.jpg" alt="bernese-mountain-dog">
+        <img class="card-img d-inline-block w-100 dogimg" src="images/bernese-mountain-dog.jpg" alt="bernese-mountain-dog" />
         <div class="overlay">
-          <a href="#"><h1>Bernese Mountain Dog</h1></a>
+          <a class="text-body breed" href="https://www.akc.org/dog-breeds/bernese-mountain-dog/" target="_blank">Bernese Mountain Dog</a>
         </div>
       </div>
       <div class="card">
-        <img class="card-img d-inline-block" src="images/bichon-frise.jpg" alt="bichon-frise">
+        <img class="card-img d-inline-block w-100 dogimg" src="images/bichon-frise.jpg" alt="bichon-frise" />
         <div class="overlay">
-          <a href="#"><h1>Bichon Frise</h1></a>
+          <a class="text-body breed" href="https://www.akc.org/dog-breeds/bichon-frise/" target="_blank">Bichon Frise</a>
         </div>
       </div>
       <div class="card">
-        <img class="card-img d-inline-block" src="images/black-and-tan-coonhound.jpg" alt="black-and-tan-coonhound">
+        <img class="card-img d-inline-block w-100 dogimg" src="images/black-and-tan-coonhound.jpg" alt="black-and-tan-coonhound" />
         <div class="overlay">
-          <a href="#"><h1>Black And Tan Coonhound</h1></a>
+          <a class="text-body breed" href="https://www.akc.org/dog-breeds/black-and-tan-coonhound/" target="_blank">Black And Tan Coonhound</a>
         </div>
       </div>
       <div class="card">
-        <img class="card-img d-inline-block" src="images/black-russian-terrier.jpg" alt="black-russian-terrier">
+        <img class="card-img d-inline-block w-100 dogimg" src="images/black-russian-terrier.jpg" alt="black-russian-terrier" />
         <div class="overlay">
-          <a href="#"><h1>Black Russian Terrier</h1></a>
+          <a class="text-body breed" href="https://www.akc.org/dog-breeds/black-russian-terrier/" target="_blank">Black Russian Terrier</a>
         </div>
       </div>
       <div class="card">
-        <img class="card-img d-inline-block" src="images/bloodhound.jpg" alt="bloodhound">
+        <img class="card-img d-inline-block w-100 dogimg" src="images/bloodhound.jpg" alt="bloodhound" />
         <div class="overlay">
-          <a href="#"><h1>Bloodhound</h1></a>
+          <a class="text-body breed" href="https://www.akc.org/dog-breeds/bloodhound/" target="_blank">Bloodhound</a>
         </div>
       </div>
       <div class="card">
-        <img class="card-img d-inline-block" src="images/border-collie.jpg" alt="border-collie">
+        <img class="card-img d-inline-block w-100 dogimg" src="images/border-collie.jpg" alt="border-collie" />
         <div class="overlay">
-          <a href="#"><h1>Border Collie</h1></a>
+          <a class="text-body breed" href="https://www.akc.org/dog-breeds/border-collie/" target="_blank">Border Collie</a>
         </div>
       </div>
       <div class="card">
-        <img class="card-img d-inline-block" src="images/border-terrier.jpg" alt="border-terrier">
+        <img class="card-img d-inline-block w-100 dogimg" src="images/border-terrier.jpg" alt="border-terrier" />
         <div class="overlay">
-          <a href="#"><h1>Border Terrier</h1></a>
+          <a class="text-body breed" href="https://www.akc.org/dog-breeds/border-terrier/" target="_blank">Border Terrier</a>
         </div>
       </div>
       <div class="card">
-        <img class="card-img d-inline-block" src="images/borzoi.jpg" alt="borzoi">
+        <img class="card-img d-inline-block w-100 dogimg" src="images/borzoi.jpg" alt="borzoi" />
         <div class="overlay">
-          <a href="#"><h1>Borzoi</h1></a>
+          <a class="text-body breed" href="https://www.akc.org/dog-breeds/borzoi/" target="_blank">Borzoi</a>
         </div>
       </div>
       <div class="card">
-        <img class="card-img d-inline-block" src="images/boston-terrier.jpg" alt="boston-terrier">
+        <img class="card-img d-inline-block w-100 dogimg" src="images/boston-terrier.jpg" alt="boston-terrier" />
         <div class="overlay">
-          <a href="#"><h1>Boston Terrier</h1></a>
+          <a class="text-body breed" href="https://www.akc.org/dog-breeds/boston-terrier/" target="_blank">Boston Terrier</a>
         </div>
       </div>
       <div class="card">
-        <img class="card-img d-inline-block" src="images/bouvier-des-flandres.jpg" alt="bouvier-des-flandres">
+        <img class="card-img d-inline-block w-100 dogimg" src="images/bouvier-des-flandres.jpg" alt="bouvier-des-flandres" />
         <div class="overlay">
-          <a href="#"><h1>Bouvier des Flandres</h1></a>
+          <a class="text-body breed" href="https://www.akc.org/dog-breeds/bouvier-des-flandres/" target="_blank">Bouvier des Flandres</a>
         </div>
       </div>
       <div class="card">
-        <img class="card-img d-inline-block" src="images/boxer.jpg" alt="boxer">
+        <img class="card-img d-inline-block w-100 dogimg" src="images/boxer.jpg" alt="boxer" />
         <div class="overlay">
-          <a href="#"><h1>Boxer</h1></a>
+          <a class="text-body breed" href="https://www.akc.org/dog-breeds/boxer/" target="_blank">Boxer</a>
         </div>
       </div>
       <div class="card">
-        <img class="card-img d-inline-block" src="images/briard.jpg" alt="briard">
+        <img class="card-img d-inline-block w-100 dogimg" src="images/briard.jpg" alt="briard" />
         <div class="overlay">
-          <a href="#"><h1>Briard</h1></a>
+          <a class="text-body breed" href="https://www.akc.org/dog-breeds/briard/" target="_blank">Briard</a>
         </div>
       </div>
       <div class="card">
-        <img class="card-img d-inline-block" src="images/brittany.jpg" alt="brittany">
+        <img class="card-img d-inline-block w-100 dogimg" src="images/brittany.jpg" alt="brittany" />
         <div class="overlay">
-          <a href="#"><h1>Brittany</h1></a>
+          <a class="text-body breed" href="https://www.akc.org/dog-breeds/brittany/" target="_blank">Brittany</a>
         </div>
       </div>
       <div class="card">
-        <img class="card-img d-inline-block" src="images/brussels-griffon.jpg" alt="brussels-griffon">
+        <img class="card-img d-inline-block w-100 dogimg" src="images/brussels-griffon.jpg" alt="brussels-griffon" />
         <div class="overlay">
-          <a href="#"><h1>Brussels Griffon</h1></a>
+          <a class="text-body breed" href="https://www.akc.org/dog-breeds/brussels-griffon/" target="_blank">Brussels Griffon</a>
         </div>
       </div>
       <div class="card">
-        <img class="card-img d-inline-block" src="images/bull-terrier.jpg" alt="bull-terrier">
+        <img class="card-img d-inline-block w-100 dogimg" src="images/bull-terrier.jpg" alt="bull-terrier" />
         <div class="overlay">
-          <a href="#"><h1>Bull Terrier</h1></a>
+          <a class="text-body breed" href="https://www.akc.org/dog-breeds/bull-terrier/" target="_blank">Bull Terrier</a>
         </div>
       </div>
       <div class="card">
-        <img class="card-img d-inline-block" src="images/bulldog.jpg" alt="bulldog">
+        <img class="card-img d-inline-block w-100 dogimg" src="images/bulldog.jpg" alt="bulldog" />
         <div class="overlay">
-          <a href="#"><h1>Bulldog</h1></a>
+          <a class="text-body breed" href="https://www.akc.org/dog-breeds/bulldog/" target="_blank">Bulldog</a>
         </div>
       </div>
       <div class="card">
-        <img class="card-img d-inline-block" src="images/bullmastiff.jpg" alt="bullmastiff">
+        <img class="card-img d-inline-block w-100 dogimg" src="images/bullmastiff.jpg" alt="bullmastiff" />
         <div class="overlay">
-          <a href="#"><h1>Bullmastiff</h1></a>
+          <a class="text-body breed" href="https://www.akc.org/dog-breeds/bullmastiff/" target="_blank">Bullmastiff</a>
         </div>
       </div>
       <div class="card">
-        <img class="card-img d-inline-block" src="images/cairn-terrier.jpg" alt="cairn-terrier">
+        <img class="card-img d-inline-block w-100 dogimg" src="images/cairn-terrier.jpg" alt="cairn-terrier" />
         <div class="overlay">
-          <a href="#"><h1>Cairn Terrier</h1></a>
+          <a class="text-body breed" href="https://www.akc.org/dog-breeds/cairn-terrier/" target="_blank">Cairn Terrier</a>
         </div>
       </div>
       <div class="card">
-        <img class="card-img d-inline-block" src="images/canaan-dog.jpg" alt="canaan-dog">
+        <img class="card-img d-inline-block w-100 dogimg" src="images/canaan-dog.jpg" alt="canaan-dog" />
         <div class="overlay">
-          <a href="#"><h1>Canaan Dog</h1></a>
+          <a class="text-body breed" href="https://www.akc.org/dog-breeds/canaan-dog/" target="_blank">Canaan Dog</a>
         </div>
       </div>
       <div class="card">
-        <img class="card-img d-inline-block" src="images/cardigan-welsh-corgi.jpg" alt="cardigan-welsh-corgi">
+        <img class="card-img d-inline-block w-100 dogimg" src="images/cardigan-welsh-corgi.jpg" alt="cardigan-welsh-corgi" />
         <div class="overlay">
-          <a href="#"><h1>Cardigan Welsh Corgi</h1></a>
+          <a class="text-body breed" href="https://www.akc.org/dog-breeds/cardigan-welsh-corgi/" target="_blank">Cardigan Welsh Corgi</a>
         </div>
       </div>
       <div class="card">
-        <img class="card-img d-inline-block" src="images/cavalier-king-charles-spaniel.jpg" alt="cavalier-king-charles-spaniel">
+        <img class="card-img d-inline-block w-100 dogimg" src="images/cavalier-king-charles-spaniel.jpg" alt="cavalier-king-charles-spaniel" />
         <div class="overlay">
-          <a href="#"><h1>Cavalier King Charles Spaniel</h1></a>
+          <a class="text-body breed" href="https://www.akc.org/dog-breeds/cavalier-king-charles-spaniel/" target="_blank">Cavalier King Charles Spaniel</a>
         </div>
       </div>
       <div class="card">
-        <img class="card-img d-inline-block" src="images/chesapeake-bay-retriever.jpg" alt="chesapeake-bay-retriever">
+        <img class="card-img d-inline-block w-100 dogimg" src="images/chesapeake-bay-retriever.jpg" alt="chesapeake-bay-retriever" />
         <div class="overlay">
-          <a href="#"><h1>Chesapeake Bay Retriever</h1></a>
+          <a class="text-body breed" href="https://www.akc.org/dog-breeds/chesapeake-bay-retriever/" target="_blank">Chesapeake Bay Retriever</a>
         </div>
       </div>
       <div class="card">
-        <img class="card-img d-inline-block" src="images/chihuahua.jpg" alt="chihuahua">
+        <img class="card-img d-inline-block w-100 dogimg" src="images/chihuahua.jpg" alt="chihuahua" />
         <div class="overlay">
-          <a href="#"><h1>Chihuahua</h1></a>
+          <a class="text-body breed" href="https://www.akc.org/dog-breeds/chihuahua/" target="_blank">Chihuahua</a>
         </div>
       </div>
       <div class="card">
-        <img class="card-img d-inline-block" src="images/chow-chow.jpg" alt="chow-chow">
+        <img class="card-img d-inline-block w-100 dogimg" src="images/chow-chow.jpg" alt="chow-chow" />
         <div class="overlay">
-          <a href="#"><h1>Chow Chow</h1></a>
+          <a class="text-body breed" href="https://www.akc.org/dog-breeds/chow-chow/" target="_blank">Chow Chow</a>
         </div>
       </div>
       <div class="card">
-        <img class="card-img d-inline-block" src="images/clumber-spaniel.jpg" alt="clumber-spaniel">
+        <img class="card-img d-inline-block w-100  dogimg" src="images/clumber-spaniel.jpg" alt="clumber-spaniel" />
         <div class="overlay">
-          <a href="#"><h1>Clumber Spaniel</h1></a>
+          <a class="text-body breed" href="https://www.akc.org/dog-breeds/clumber-spaniel/" target="_blank">Clumber Spaniel</a>
         </div>
       </div>
       <div class="card">
-        <img class="card-img d-inline-block" src="images/cocker-spaniel.jpg" alt="cocker-spaniel">
+        <img class="card-img d-inline-block w-100 dogimg" src="images/cocker-spaniel.jpg" alt="cocker-spaniel" />
         <div class="overlay">
-          <a href="#"><h1>Cocker Spaniel</h1></a>
+          <a class="text-body breed" href="https://www.akc.org/dog-breeds/cocker-spaniel/" target="_blank">Cocker Spaniel</a>
         </div>
       </div>
       <div class="card">
-        <img class="card-img d-inline-block" src="images/collie.jpg" alt="collie">
+        <img class="card-img d-inline-block w-100 dogimg" src="images/collie.jpg" alt="collie" />
         <div class="overlay">
-          <a href="#"><h1>Collie</h1></a>
+          <a class="text-body breed" href="https://www.akc.org/dog-breeds/collie/" target="_blank"><h1>Collie</a>
         </div>
       </div>
       <div class="card">
-        <img class="card-img d-inline-block" src="images/curly-coated-retriever.jpg" alt="curly-coated-retriever">
+        <img class="card-img d-inline-block w-100 dogimg" src="images/curly-coated-retriever.jpg" alt="curly-coated-retriever" />
         <div class="overlay">
-          <a href="#"><h1>Curly Coated Retriever</h1></a>
+          <a class="text-body breed" href="https://www.akc.org/dog-breeds/curly-coated-retriever/" target="_blank">Curly Coated Retriever</a>
         </div>
       </div>
 

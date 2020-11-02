@@ -1,0 +1,92 @@
+.breed {
+  font-size: 40px;
+  padding: 10px;
+  color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.dogimg {
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgb(255, 255, 255, 0.8);
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+.navbar-brand {
+  font-size: 100px;
+}
+
+.nav-item {
+  font-size: 30px;
+}
+
+@media (min-width: 0px) {
+  .card-columns {
+    column-count: 1;
+  }
+  .jumbotron h1 {
+    font-size: 60px;
+  }
+}
+
+@media (min-width: 800px) {
+  .card-columns {
+    column-count: 2;
+  }
+  .jumbotron h1 {
+    font-size: 80px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .card-columns {
+    column-count: 3;
+  }
+  .jumbotron h1 {
+    font-size: 120px;
+  }
+}
+
+.foodname {
+  font-size: 30px;
+}
+
+.jumbotron {
+  background: url(images/dog-eating-food.jpg) center center;
+  background-size: cover;
+  height: 850px;
+}
+
+.anchor {
+  padding-top: 125px;
+}
+
+.carousel-caption {
+  font-size: 20px;
+}
+
+.dogtext, li {
+  font-size: 20px;
+}
